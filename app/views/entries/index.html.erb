@@ -11,7 +11,7 @@
 
   <% @entries.each do |entry| %>
       <tr>
-        <td><%#= entry.user.username %></td>
+        <td><%= entry.user.username %></td>
         <td><%= entry.post %></td>
         <td><%= link_to 'Show', entry %></td>
         <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
